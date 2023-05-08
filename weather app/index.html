@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>weather app </title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name " class="input-box">
+                <button  class="fa-solid fa-magnifying-glass sbtn" id="search-btn"></button>
+            </div>
+        </div>
+              
+            <div class="loc-n-f">
+                <h1>Sorry, Location not found</h1>
+                <img src="404.png" alt="error">
+                <h1 style="color: #d5dde9;">------------</h1>
+                <h1 style="color: #d5dde9;">------------</h1>
+            </div>
+
+        <div class="weather-body">
+            <img src="cloud.png" alt="weather" class="weather-img">
+            <div class="weather-box" style="margin-top: 20px;">
+                <p class="temp"  style="margin-left: 30"> 0 <sup>°C</sup></p>
+                <p class="desc" style="font-size: large; font-weight: bold;">Light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"> </i>
+                     <div class="text">
+                        <span id="humidity">0 %</span>
+                        <p>humidity</p>
+                     </div>
+                </div>
+
+                <div class="wind-speed">
+                    <i class="fa-sharp fa-solid fa-wind"> </i>
+                     <div class="text">
+                        <span id="wind-speed" class="wspeed">0  Km/ph</span>
+                         <p>wind-speed</p> 
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/99799aeb04.js" crossorigin="anonymous"></script>
+</body>
+</html>
